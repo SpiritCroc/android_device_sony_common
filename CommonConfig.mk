@@ -41,10 +41,11 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
 
-#Camera
-TARGET_USES_AOSP := true
+# Camera
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 BOARD_QTI_CAMERA_V2 := true
+USE_DEVICE_SPECIFIC_CAMERA := true
+DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 
 # GPS definitions for Qualcomm solution
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
@@ -65,6 +66,10 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
+
+# QCOM Hardware
+BOARD_USES_QCOM_HARDWARE := true
+SONY_BF64_KERNEL_VARIANT := true
 
 BUILD_KERNEL := true
 -include device/sony/common-headers/KernelHeaders.mk
