@@ -22,10 +22,6 @@ SONY_AOSP ?= true
 # Kernel source
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
-# Custom bootimage
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/common/boot/custombootimg.mk
-
 # Healthd
 HEALTHD_FORCE_BACKLIGHT_CONTROL := true
 HEALTHD_ENABLE_TRICOLOR_LED := true

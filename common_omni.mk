@@ -15,10 +15,6 @@
 # Include common
 include device/sony/common/common.mk
 
-# Recovery keycheck
-PRODUCT_PACKAGES += \
-    keycheck
-
 # SELinux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
