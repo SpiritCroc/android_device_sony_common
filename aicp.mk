@@ -14,3 +14,7 @@
 
 # Kernel source
 TARGET_KERNEL_SOURCE := kernel/sony/msm
+
+# Camera
+USE_DEVICE_SPECIFIC_CAMERA := true
+DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
