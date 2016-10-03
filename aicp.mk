@@ -19,3 +19,6 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm
 SONY_AOSP := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
+
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
