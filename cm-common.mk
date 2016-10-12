@@ -31,6 +31,10 @@ BOARD_SEPOLICY_DIRS += device/sony/common/sepolicy
 PRODUCT_PACKAGES += \
     Gello
 
+# Media Test
+PRODUCT_PACKAGES += \
+    msm-vidc-test
+
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
