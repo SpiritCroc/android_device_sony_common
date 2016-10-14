@@ -23,6 +23,9 @@ AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 
+# CM Hardware
+BOARD_HARDWARE_CLASS += device/sony/common/cmhw
+
 # QCOM Hardware
 BOARD_USES_QCOM_HARDWARE := true
 SONY_BF64_KERNEL_VARIANT := true
