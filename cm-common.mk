@@ -30,6 +30,10 @@ SONY_BF64_KERNEL_VARIANT := true
 # Sepolicy
 BOARD_SEPOLICY_DIRS += device/sony/common/sepolicy
 
+# Audio
+PRODUCT_PACKAGES += \
+    audiod
+
 # CM Packages
 PRODUCT_PACKAGES += \
     Gello
