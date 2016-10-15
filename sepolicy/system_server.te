@@ -1,0 +1,2 @@
+#allow reading of usb sysfs to query hvdcp state
+allow system_server sysfs_usb_supply:file r_file_perms;
