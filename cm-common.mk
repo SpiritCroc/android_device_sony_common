@@ -18,6 +18,7 @@ TARGET_UNOFFICIAL_BUILD_ID := SonyCM
 # Audio
 include vendor/qcom/extras/proprietary.mk
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
+USE_CUSTOM_AUDIO_POLICY := 1
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
