@@ -38,6 +38,20 @@ BOARD_SEPOLICY_DIRS += device/sony/common/sepolicy
 PRODUCT_PACKAGES += \
     audiod
 
+PRODUCT_COPY_FILES += \
+    device/sony/common/rootdir/system/vendor/etc/audio_effects_caf.conf:system/vendor/etc/audio_effects.conf \
+    device/sony/common/rootdir/system/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
+    device/sony/common/rootdir/system/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
+    device/sony/common/rootdir/system/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.buffer.size.kb=32 \
+    audio.offload.gapless.enabled=true \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
+    audio.offload.video=true \
+    av.streaming.offload.enable=true
+
 # CM Packages
 PRODUCT_PACKAGES += \
     Gello
