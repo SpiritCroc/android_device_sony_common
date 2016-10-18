@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # CM Build
-TARGET_UNOFFICIAL_BUILD_ID := SonyCM
+TARGET_UNOFFICIAL_BUILD_ID := SonyCM-caf
 
 # Audio
 include vendor/qcom/extras/proprietary.mk
