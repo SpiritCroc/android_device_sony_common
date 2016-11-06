@@ -38,5 +38,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
 
+
 # GPS
 $(call project-set-path,qcom-gps,hardware/sony/gps/msm8994)
+
+# TWRP
+include device/sony/common/twrp.mk
