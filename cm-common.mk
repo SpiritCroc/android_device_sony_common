@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# CM Build
-TARGET_UNOFFICIAL_BUILD_ID := SonyCM-caf
-
 # Audio
 include vendor/qcom/extras/proprietary.mk
 AUDIO_FEATURE_ENABLED_NEW_SAMPLE_RATE := true
