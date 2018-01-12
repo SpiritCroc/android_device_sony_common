@@ -29,3 +29,6 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 # twrp
 $(call inherit-product, $(COMMON_PATH)/recovery/twrp.mk)
+
+# Widevine DRM
+$(call inherit-product-if-exists, vendor/sony/widevine/widevine.mk)
