@@ -39,8 +39,5 @@ TARGET_EXFAT_DRIVER := sdfat
 # Command Line Tools
 BOARD_INCLUDE_CMDLINE_TOOLS := true
 
-# twrp
-$(call inherit-product, $(COMMON_PATH)/recovery/twrp.mk)
-
 # Widevine DRM
 $(call inherit-product-if-exists, vendor/sony/widevine/widevine.mk)
