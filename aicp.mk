@@ -39,5 +39,8 @@ TARGET_EXFAT_DRIVER := sdfat
 # Command Line Tools
 BOARD_INCLUDE_CMDLINE_TOOLS := true
 
+# Avoid using DTBO image recipe from kernel.mk in vendor/omni
+TARGET_PROVIDES_DTBOIMAGE := true
+
 # Widevine DRM
 $(call inherit-product-if-exists, vendor/sony/widevine/widevine.mk)
