@@ -43,4 +43,4 @@ BOARD_INCLUDE_CMDLINE_TOOLS := true
 TARGET_PROVIDES_DTBOIMAGE := true
 
 # Widevine DRM
-$(call inherit-product-if-exists, vendor/sony/widevine/widevine.mk)
+#$(call inherit-product-if-exists, vendor/sony/widevine/widevine.mk)
