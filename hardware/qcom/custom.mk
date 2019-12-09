@@ -18,7 +18,7 @@ gps-hal := $(SONY_QCOM_HAL_ROOT)/gps/sdm845
 display-hal := $(SONY_QCOM_HAL_ROOT)/display
 
 ifneq ($(filter $(QCOM_NEW_MEDIA_PLATFORM), $(TARGET_BOARD_PLATFORM)),)
-QCOM_MEDIA_ROOT := $(SONY_QCOM_HAL_ROOT)/media/sm8150
+QCOM_MEDIA_ROOT := $(SONY_QCOM_HAL_ROOT)/media/sdm845
 else
 QCOM_MEDIA_ROOT := $(SONY_QCOM_HAL_ROOT)/media/msm8998
 endif
