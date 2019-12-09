@@ -23,7 +23,7 @@ SONY_QCOM_HAL_ROOT := hardware/sony/qcom
 PRODUCT_SOONG_NAMESPACES += $(SONY_QCOM_HAL_ROOT)
 
 # Common kernel source
-TARGET_KERNEL_SOURCE := kernel/sony/msm-4.14/kernel
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.9/kernel
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 # SELinux
